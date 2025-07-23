@@ -2306,6 +2306,10 @@ figure {
   object-position: inherit;
 }
 
+.g_visual_img.u-cover-absolute {
+  will-change: transform;
+}
+
 .g_visual_overlay {
   background-color: #000;
 }
@@ -2747,6 +2751,8 @@ figure {
 .stories_home_image_wrap {
   width: var(--column-width--10);
   aspect-ratio: 8.2 / 10;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   grid-column: 6;
   position: relative;
   overflow: hidden;
@@ -3339,7 +3345,7 @@ figure {
   max-height: 85vh;
   position: fixed;
   inset: 0% 0% auto;
-  overflow: clip;
+  overflow: scroll;
 }
 
 .topper_stories_contain, .topper_stories_contain.u-mb-8 {
@@ -3760,7 +3766,7 @@ figure {
   width: var(--column-width--4);
   line-height: var(--_typography---line-height--1-4);
   font-weight: var(--_typography---font--primary-medium);
-  margin-bottom: 12.5rem;
+  margin-bottom: 5rem;
 }
 
 .footer_meta_layout {
@@ -4088,7 +4094,7 @@ figure {
   flex: none;
   justify-content: center;
   align-items: center;
-  width: 31.69rem;
+  width: 31rem;
   transition: opacity .25s cubic-bezier(.77, 0, .175, 1);
   display: flex;
   position: relative;
@@ -4556,6 +4562,10 @@ figure {
   width: 100%;
   height: 120%;
   position: absolute;
+}
+
+._404 {
+  background-color: var(--swatch--brand);
 }
 
 @media screen and (max-width: 991px) {
@@ -5201,7 +5211,6 @@ figure {
 
   .thoughts_title {
     width: auto;
-    margin-bottom: 6rem;
   }
 
   .footer_meta_year.u-column-custom {
@@ -5267,10 +5276,6 @@ figure {
 
 #w-node-_44b5ae6a-856d-6d16-9e12-8fae1c18356e-8339f9f0 {
   order: 9999;
-}
-
-#w-node-_8a315767-7ec5-c18c-5116-8be8f25a02ca-f25a02ba {
-  align-self: end;
 }
 
 
